@@ -1,0 +1,73 @@
+<aside class="bg-white rounded-lg shadow p-6">
+    <h2 class="text-lg font-semibold mb-4">Order summary</h2>
+
+    <ul id="orderItems" class="space-y-4 mb-6">
+        <li class="flex items-center gap-4">
+            <img src="https://via.placeholder.com/80" alt="Product 1"
+                class="w-16 h-16 object-cover rounded">
+            <div class="flex-1">
+                <div class="font-medium">Amazing Product</div>
+                <div class="text-sm text-gray-500">SKU: 12345</div>
+            </div>
+            <div class="text-right">
+                <div class="text-sm text-gray-600">$<span class="item-price">59.99</span></div>
+                <div class="mt-2 flex items-center justify-end gap-2">
+                    <button class="oi-decrease px-2 py-1 border rounded">−</button>
+                    <input class="oi-qty w-12 text-center border px-2 py-1" type="number" min="1"
+                        value="1" />
+                    <button class="oi-increase px-2 py-1 border rounded">+</button>
+                </div>
+            </div>
+        </li>
+
+        <li class="flex items-center gap-4">
+            <img src="https://via.placeholder.com/80/eee" alt="Product 2"
+                class="w-16 h-16 object-cover rounded">
+            <div class="flex-1">
+                <div class="font-medium">Accessory</div>
+                <div class="text-sm text-gray-500">SKU: 9876</div>
+            </div>
+            <div class="text-right">
+                <div class="text-sm text-gray-600">$<span class="item-price">19.99</span></div>
+                <div class="mt-2 flex items-center justify-end gap-2">
+                    <button class="oi-decrease px-2 py-1 border rounded">−</button>
+                    <input class="oi-qty w-12 text-center border px-2 py-1" type="number" min="1"
+                        value="1" />
+                    <button class="oi-increase px-2 py-1 border rounded">+</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="text-sm text-gray-600 flex justify-between mb-2">
+        <span>Subtotal</span>
+        <span>$<span id="checkoutSubtotal">0.00</span></span>
+    </div>
+
+    <div class="text-sm text-gray-600 flex justify-between mb-2">
+        <span>Shipping</span>
+        <span id="checkoutShipping">$0.00</span>
+    </div>
+
+    <div class="text-sm text-gray-600 flex justify-between mb-4">
+        <span>Tax</span>
+        <span id="checkoutTax">$0.00</span>
+    </div>
+
+    <div class="border-t pt-4 flex justify-between items-center mb-4">
+        <div>
+            <div class="text-sm text-gray-500">Total</div>
+            <div class="text-2xl font-bold">$<span id="checkoutTotal">0.00</span></div>
+        </div>
+        <div>
+            <button id="placeOrder" class="bg-green-600 text-white px-5 py-3 rounded-lg font-semibold">Place
+                order</button>
+        </div>
+    </div>
+
+    <p class="text-xs text-gray-500">Secure checkout — we protect your data.</p>
+
+    <div id="orderSuccess" class="mt-4 p-3 rounded bg-green-50 text-green-700 hidden">Order placed —
+        confirmation sent to your email.</div>
+</aside>
+</div>

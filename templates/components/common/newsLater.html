@@ -1,0 +1,29 @@
+    <section id="newsletter" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-gray-50 rounded-2xl shadow-lg p-8 sm:p-12 text-center">
+                <h4 class="text-sm font-semibold text-green-600 mb-2">Stay in the loop</h4>
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Subscribe to our newsletter</h2>
+                <p class="text-gray-600 mb-6">Get exclusive offers, product updates, and early access to new arrivals.
+                </p>
+
+                <form class="flex flex-col sm:flex-row items-center gap-4" action="#" method="post" novalidate>
+                    <label for="email" class="sr-only">Email address</label>
+                    <input id="email" name="email" type="email" required
+                        class="w-full sm:flex-1 px-4 py-3 rounded-lg border border-gray-200 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-300"
+                        placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit"
+                        class="inline-block bg-green-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-green-700 transition w-full sm:w-auto">
+                        Subscribe
+                    </button>
+                </form>
+
+                <p class="text-xs text-gray-500 mt-4">We respect your privacy. Unsubscribe anytime.</p>
+
+                <!-- placeholders for JS-driven feedback (fixed markup) -->
+                <p id="newsletter-success" class="mt-4 text-sm text-green-700 hidden" role="status" aria-live="polite">
+                    Thanks — you’re subscribed!</p>
+                <p id="newsletter-error" class="mt-4 text-sm text-red-600 hidden" role="alert" aria-live="assertive">
+                    Please enter a valid email.</p>
+            </div>
+        </div>
+    </section>

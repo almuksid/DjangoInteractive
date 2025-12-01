@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <main class="container mx-auto px-6 py-12">
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            {% include 'components/product/viewProduct.html' %}
+            {% include 'components/product/description.html' %}
+            {% include 'components/product/relatedProduct.html' %}
+        </div>
+    </main>
+{% endblock %}

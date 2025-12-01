@@ -1,0 +1,37 @@
+<section id="categories" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12">
+            Shop by Category
+        </h2>
+
+        <!-- SLIDER -->
+        <div class="swiper myCategorySwiper">
+            <div class="swiper-wrapper">
+
+                {% for item in category %}
+                <div class="swiper-slide">
+                    <a href="#"
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1 block">
+                        
+                        <img src="{{ item.image }}" 
+                             alt="{{ item.title }}" 
+                             class="w-full h-48 object-cover">
+
+                        <div class="p-5 text-center">
+                            <h3 class="text-lg font-semibold text-gray-800">{{ item.title }}</h3>
+                            <p class="text-sm text-gray-500 mt-1">{{ item.subtitle }}</p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </div>
+</section>

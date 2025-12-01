@@ -1,0 +1,78 @@
+<section class="lg:col-span-2 bg-white rounded-lg shadow p-6 space-y-6">
+    <div>
+        <h2 class="text-lg font-semibold mb-3">Billing details</h2>
+        <form id="checkoutForm" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input name="firstName" required placeholder="First name"
+                class="col-span-1 sm:col-span-1 px-4 py-3 rounded border border-gray-200" />
+            <input name="lastName" required placeholder="Last name"
+                class="col-span-1 sm:col-span-1 px-4 py-3 rounded border border-gray-200" />
+            <input name="email" type="email" required placeholder="Email address"
+                class="sm:col-span-2 px-4 py-3 rounded border border-gray-200" />
+            <input name="phone" placeholder="Phone (optional)"
+                class="sm:col-span-2 px-4 py-3 rounded border border-gray-200" />
+            <input name="address" required placeholder="Street address"
+                class="sm:col-span-2 px-4 py-3 rounded border border-gray-200" />
+            <input name="city" required placeholder="City"
+                class="px-4 py-3 rounded border border-gray-200" />
+            <input name="zip" required placeholder="ZIP / Postal"
+                class="px-4 py-3 rounded border border-gray-200" />
+            <select name="country" required class="sm:col-span-2 px-4 py-3 rounded border border-gray-200">
+                <option value="">Select country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Germany</option>
+            </select>
+        </form>
+    </div>
+
+    <div>
+        <h2 class="text-lg font-semibold mb-3">Shipping</h2>
+        <label class="flex items-center gap-3">
+            <input id="sameShipping" type="checkbox" checked class="w-4 h-4">
+            <span class="text-sm text-gray-700">Shipping address same as billing</span>
+        </label>
+
+        <div id="shippingForm" class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 hidden">
+            <input name="s_address" placeholder="Street address"
+                class="sm:col-span-2 px-4 py-3 rounded border border-gray-200" />
+            <input name="s_city" placeholder="City" class="px-4 py-3 rounded border border-gray-200" />
+            <input name="s_zip" placeholder="ZIP / Postal"
+                class="px-4 py-3 rounded border border-gray-200" />
+            <select name="s_country" class="sm:col-span-2 px-4 py-3 rounded border border-gray-200">
+                <option value="">Select country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Germany</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-lg font-semibold mb-3">Payment</h2>
+        <div class="space-y-3">
+            <label class="flex items-center gap-3">
+                <input type="radio" name="payment" value="card" checked class="w-4 h-4">
+                <span class="text-sm">Credit / Debit card</span>
+            </label>
+            <label class="flex items-center gap-3">
+                <input type="radio" name="payment" value="paypal" class="w-4 h-4">
+                <span class="text-sm">PayPal</span>
+            </label>
+
+            <div id="cardFields" class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input name="cardName" placeholder="Name on card"
+                    class="sm:col-span-2 px-4 py-3 rounded border border-gray-200" />
+                <input name="cardNumber" placeholder="Card number"
+                    class="sm:col-span-2 px-4 py-3 rounded border border-gray-200" />
+                <input name="cardExp" placeholder="MM/YY"
+                    class="px-4 py-3 rounded border border-gray-200" />
+                <input name="cardCVC" placeholder="CVC" class="px-4 py-3 rounded border border-gray-200" />
+            </div>
+        </div>
+    </div>
+
+    <div class="text-sm text-gray-600">
+        <p>By placing your order you agree to our <a href="#" class="text-green-600 hover:underline">terms &
+                conditions</a>.</p>
+    </div>
+</section>
