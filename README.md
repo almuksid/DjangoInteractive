@@ -47,43 +47,50 @@
 ## 🌟 Django Template Filters & Tags Cheat Sheet
 
 ### 📝 TEXT FILTERS
-✨ Capital First: `{{ city|capfirst }}`  
-🔠 Uppercase: `{{ city|upper }}`  
-🔡 Lowercase: `{{ city|lower }}`  
-🧮 Word Count: `{{ city|wordcount }}`  
-🏷 Title Case: `{{ city|title }}`  
-✂️ Remove Letter "d": `{{ city|cut:"d" }}`
+- ✨ Capital First: `{{ city|capfirst }}`
+- 🔠 Uppercase: `{{ city|upper }}`
+- 🔡 Lowercase: `{{ city|lower }}`
+- 🧮 Word Count: `{{ city|wordcount }}`
+- 🏷 Title Case: `{{ city|title }}`
+- ✂️ Remove Letter "d": `{{ city|cut:"d" }}`
 
 ### 🔢 NUMBER FILTERS
-➕ Add 10: `{{ age|add:10 }}`  
-🔍 Divisible by 2: `{{ age|divisibleby:2 }}`  
-🎯 Float (2 decimals): `{{ age|floatformat:2 }}`
+- ➕ Add 10: `{{ age|add:10 }}`
+- 🔍 Divisible by 2: `{{ age|divisibleby:2 }}`
+- 🎯 Float (2 decimals): `{{ age|floatformat:2 }}`
 
 ### 📋 LIST FILTERS
-📏 Length: `{{ skills|length }}`  
-🔹 First Item: `{{ skills|first }}`  
-🔸 Last Item: `{{ skills|last }}`  
-🔗 Join List: `{{ skills|join:"," }}`
+- 📏 Length: `{{ skills|length }}`
+- 🔹 First Item: `{{ skills|first }}`
+- 🔸 Last Item: `{{ skills|last }}`
+- 🔗 Join List: `{{ skills|join:"," }}`
 
 ### 🗓 DATE & TIME FILTERS
-📅 Original Date: `{{ dob }}`  
-📆 Format (Y-m-d): `{{ dob|date:"Y-m-d" }}`  
-⏳ Time Until: `{{ dob|timeuntil }}`  
-🕰 Time Since: `{{ dob|timesince }}`
+- 📅 Original Date: `{{ dob }}`
+- 📆 Format (Y-m-d): `{{ dob|date:"Y-m-d" }}`
+- ⏳ Time Until: `{{ dob|timeuntil }}`
+- 🕰 Time Since: `{{ dob|timesince }}`
 
 ### 🔐 ESCAPE FILTERS
-✅ Safe HTML: `{{ button|safe }}`  
-🚫 Escape HTML: `{{ button|escape }}`
+- ✅ Safe HTML: `{{ button|safe }}`
+- 🚫 Escape HTML: `{{ button|escape }}`
 
 ### ⚙️ CONDITIONAL FILTERS
-🧩 Default Value: `{{ isBangladeshi|default:"No Value" }}`
+- 🧩 Default Value: `{{ isBangladeshi|default:"No Value" }}`
 
 ### 📚 DICTIONARY FILTERS
-🗂 Dictionary: `{{ learners }}`  
-🔤 Sort by Name: `{{ learners|dictsort:'name' }}`  
-🔁 Sort by Name (Reversed): `{{ learners|dictsortreversed:'name' }}`
+- 🗂 Dictionary: `{{ learners }}`
+- 🔤 Sort by Name: `{{ learners|dictsort:'name' }}`
+- 🔁 Sort by Name (Reversed): `{{ learners|dictsortreversed:'name' }}`
 
 ### 🔄 IF / ELSE (Condition)
+```django
+{% if user.is_authenticated %}
+    Hello, {{ user.username }}
+{% else %}
+    Login
+{% endif %}
+
 
 ---
 
