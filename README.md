@@ -97,16 +97,17 @@
 ## 🧩 Django Template Features
 
 ### 📄 Template Inheritance
-✨ Use `{% extends 'base.html' %}` for base templates  
-🔁 Use `{% block %}` for overridable sections
+- ✨ Use `{% extends 'base.html' %}` for base templates
+- 🔁 Use `{% block %}` for overridable sections
 
 ### 🏷 Block Tags
-📌 Define reusable sections with `{% block %}` and `{% endblock %}`
+- 📌 Define reusable sections with `{% block %}` and `{% endblock %}`
 
 ### 📁 Static File Management
-🖼 Include static files (CSS, JS, etc.) with `{% load static %}`
+- 🖼 Include static files (CSS, JS, etc.) with `{% load static %}`
 
 ### 💬 Comments
-💡 Add ignored comments with `{# This is a comment #}`
+- 💡 Add ignored comments with `{# This is a comment #}`
+
 
 ---
