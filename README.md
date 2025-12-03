@@ -42,7 +42,9 @@
 ---
 ---
 
-# 🌟 Django Template Filters & Tags Cheat Sheet
+# 🎨 Django Template Cheatsheet
+
+## 🌟 Django Template Filters & Tags Cheat Sheet
 
 ### 📝 TEXT FILTERS
 ✨ Capital First: `{{ city|capfirst }}`  
@@ -52,14 +54,10 @@
 🏷 Title Case: `{{ city|title }}`  
 ✂️ Remove Letter "d": `{{ city|cut:"d" }}`
 
----
-
 ### 🔢 NUMBER FILTERS
 ➕ Add 10: `{{ age|add:10 }}`  
 🔍 Divisible by 2: `{{ age|divisibleby:2 }}`  
 🎯 Float (2 decimals): `{{ age|floatformat:2 }}`
-
----
 
 ### 📋 LIST FILTERS
 📏 Length: `{{ skills|length }}`  
@@ -67,50 +65,41 @@
 🔸 Last Item: `{{ skills|last }}`  
 🔗 Join List: `{{ skills|join:"," }}`
 
----
-
 ### 🗓 DATE & TIME FILTERS
 📅 Original Date: `{{ dob }}`  
 📆 Format (Y-m-d): `{{ dob|date:"Y-m-d" }}`  
 ⏳ Time Until: `{{ dob|timeuntil }}`  
 🕰 Time Since: `{{ dob|timesince }}`
 
----
-
 ### 🔐 ESCAPE FILTERS
 ✅ Safe HTML: `{{ button|safe }}`  
 🚫 Escape HTML: `{{ button|escape }}`
 
----
-
 ### ⚙️ CONDITIONAL FILTERS
 🧩 Default Value: `{{ isBangladeshi|default:"No Value" }}`
-
----
 
 ### 📚 DICTIONARY FILTERS
 🗂 Dictionary: `{{ learners }}`  
 🔤 Sort by Name: `{{ learners|dictsort:'name' }}`  
 🔁 Sort by Name (Reversed): `{{ learners|dictsortreversed:'name' }}`
 
----
-
 ### 🔄 IF / ELSE (Condition)
 
 ---
----
 
-# 🧩 Django Template Features
+## 🧩 Django Template Features
 
-## 📄 Template Inheritance
+### 📄 Template Inheritance
 ✨ Use `{% extends 'base.html' %}` for base templates  
 🔁 Use `{% block %}` for overridable sections
 
-## 🏷 Block Tags
+### 🏷 Block Tags
 📌 Define reusable sections with `{% block %}` and `{% endblock %}`
 
-## 📁 Static File Management
+### 📁 Static File Management
 🖼 Include static files (CSS, JS, etc.) with `{% load static %}`
 
-## 💬 Comments
+### 💬 Comments
 💡 Add ignored comments with `{# This is a comment #}`
+
+---
