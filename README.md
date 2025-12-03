@@ -40,58 +40,45 @@
 🧱 `python manage.py startapp myapp`
 
 ---
-
+---
 # 🌟 Django Template Filters & Tags Cheat Sheet
 
-## 📝 TEXT FILTERS
-✨ Capital First: `{{ city|capfirst }}`  
-🔠 Uppercase: `{{ city|upper }}`  
-🔡 Lowercase: `{{ city|lower }}`  
-🧮 Word Count: `{{ city|wordcount }}`  
-🏷 Title Case: `{{ city|title }}`  
-✂️ Remove Letter "d": `{{ city|cut:"d" }}`
-
----
-
-## 🔢 NUMBER FILTERS
-➕ Add 10: `{{ age|add:10 }}`  
-🔍 Divisible by 2: `{{ age|divisibleby:2 }}`  
-🎯 Float (2 decimals): `{{ age|floatformat:2 }}`
-
----
-
-## 📋 LIST FILTERS
-📏 Length: `{{ skills|length }}`  
-🔹 First Item: `{{ skills|first }}`  
-🔸 Last Item: `{{ skills|last }}`  
-🔗 Join List: `{{ skills|join:"," }}`
-
----
-
-## 🗓 DATE & TIME FILTERS
-📅 Original Date: `{{ dob }}`  
-📆 Format (Y-m-d): `{{ dob|date:"Y-m-d" }}`  
-⏳ Time Until: `{{ dob|timeuntil }}`  
-🕰 Time Since: `{{ dob|timesince }}`
-
----
-
-## 🔐 ESCAPE FILTERS
-✅ Safe HTML: `{{ button|safe }}`  
-🚫 Escape HTML: `{{ button|escape }}`
-
----
-
-## ⚙️ CONDITIONAL FILTERS
-🧩 Default Value: `{{ isBangladeshi|default:"No Value" }}`
-
----
-
-## 📚 DICTIONARY FILTERS
-🗂 Dictionary: `{{ learners }}`  
-🔤 Sort by Name: `{{ learners|dictsort:'name' }}`  
-🔁 Sort by Name (Reversed): `{{ learners|dictsortreversed:'name' }}`
-
----
+| Category | Filter | Example |
+|----------|--------|---------|
+| 📝 TEXT FILTERS | ✨ Capital First | `{{ city|capfirst }}` |
+|  | 🔠 Uppercase | `{{ city|upper }}` |
+|  | 🔡 Lowercase | `{{ city|lower }}` |
+|  | 🧮 Word Count | `{{ city|wordcount }}` |
+|  | 🏷 Title Case | `{{ city|title }}` |
+|  | ✂️ Remove Letter "d" | `{{ city|cut:"d" }}` |
+| 🔢 NUMBER FILTERS | ➕ Add 10 | `{{ age|add:10 }}` |
+|  | 🔍 Divisible by 2 | `{{ age|divisibleby:2 }}` |
+|  | 🎯 Float (2 decimals) | `{{ age|floatformat:2 }}` |
+| 📋 LIST FILTERS | 📏 Length | `{{ skills|length }}` |
+|  | 🔹 First Item | `{{ skills|first }}` |
+|  | 🔸 Last Item | `{{ skills|last }}` |
+|  | 🔗 Join List | `{{ skills|join:"," }}` |
+| 🗓 DATE & TIME FILTERS | 📅 Original Date | `{{ dob }}` |
+|  | 📆 Format (Y-m-d) | `{{ dob|date:"Y-m-d" }}` |
+|  | ⏳ Time Until | `{{ dob|timeuntil }}` |
+|  | 🕰 Time Since | `{{ dob|timesince }}` |
+| 🔐 ESCAPE FILTERS | ✅ Safe HTML | `{{ button|safe }}` |
+|  | 🚫 Escape HTML | `{{ button|escape }}` |
+| ⚙️ CONDITIONAL FILTERS | 🧩 Default Value | `{{ isBangladeshi|default:"No Value" }}` |
+| 📚 DICTIONARY FILTERS | 🗂 Dictionary | `{{ learners }}` |
+|  | 🔤 Sort by Name | `{{ learners|dictsort:'name' }}` |
+|  | 🔁 Sort by Name (Reversed) | `{{ learners|dictsortreversed:'name' }}` |
 
 ## 🔄 IF / ELSE (Condition)
+
+---
+---
+
+# 🧩 Django Template Features
+
+| Feature | Description |
+|---------|-------------|
+| 📄 Template Inheritance | ✨ Use `{% extends 'base.html' %}` for base templates<br>🔁 Use `{% block %}` for overridable sections |
+| 🏷 Block Tags | 📌 Define reusable sections with `{% block %}` and `{% endblock %}` |
+| 📁 Static File Management | 🖼 Include static files (CSS, JS, etc.) with `{% load static %}` |
+| 💬 Comments | 💡 Add ignored comments with `{# This is a comment #}` |
